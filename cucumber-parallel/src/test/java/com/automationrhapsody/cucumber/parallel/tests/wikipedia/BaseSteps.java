@@ -15,7 +15,7 @@ public class BaseSteps {
     protected void startWebDriver() {
         Properties props = System.getProperties();
         props.setProperty("webdriver.gecko.driver",
-            driversFolder(new File("").getAbsolutePath()) + "geckodriver-64-win.exe");
+            driversFolder(new File("c:/repos/selenium-samples-java/").getAbsolutePath()) + "geckodriver.exe");
         driver = new FirefoxDriver();
         driver.navigate().to("http://en.wikipedia.org");
     }
